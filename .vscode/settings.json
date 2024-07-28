@@ -6,18 +6,18 @@
   },
   // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": [
-    "source.addMissingImports",
-    "source.fixAll.eslint"
-  ],
+  // "editor.codeActionsOnSave": [
+  //   "source.addMissingImports",
+  //   "source.fixAll.eslint"
+  // ],
   "typescript.tsdk": "node_modules/typescript/lib", // Use the workspace version of TypeScript
   "typescript.enablePromptUseWorkspaceTsdk": true, // For security reasons it's require that users opt into using the workspace version of typescript
   "typescript.preferences.autoImportFileExcludePatterns": [
     // useRouter should be imported from `next/navigation` instead of `next/router`
     "next/router.d.ts",
-    "next/dist/client/router.d.ts",
+    "next/dist/client/router.d.ts"
     // give priority for Link to next/link instead of lucide-react
-    "lucide-react"
+    // "lucide-react"
   ],
   "typescript.preferences.preferTypeOnlyAutoImports": true, // Prefer type-only imports
   "testing.openTesting": "neverOpen", // Don't open the testing view automatically when running tests

@@ -5,9 +5,8 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { Sarabun } from "next/font/google";
 
-import { AppConfig } from "@/utils/AppConfig";
-import { SiteHeader } from "@/components/site-header";
 import StoreProvider from "@/components/store-provider";
+import { AppConfig } from "@/utils/AppConfig";
 
 export const metadata: Metadata = {
   icons: [
@@ -59,10 +58,7 @@ export default function RootLayout(props: {
           locale={props.params.locale}
           messages={messages}
         >
-          <StoreProvider>
-            <SiteHeader />
-            {props.children}
-          </StoreProvider>
+          <StoreProvider>{props.children}</StoreProvider>
         </NextIntlClientProvider>
       </body>
     </html>

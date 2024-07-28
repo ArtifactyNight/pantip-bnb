@@ -1,10 +1,18 @@
+import spotlight from "@/lib/features/spotlight";
 import { configureStore } from "@reduxjs/toolkit";
-import spotlightSlice from "@/lib/features/spotlight";
+import clubs from "./features/clubs";
+import highlights from "./features/highlights";
+import rooms from "./features/rooms";
+import tags from "./features/tags";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      spotlight: spotlightSlice,
+      spotlight,
+      rooms,
+      highlights,
+      tags,
+      clubs,
     },
   });
 };

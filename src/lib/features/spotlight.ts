@@ -1,9 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const SPOTLIGHT_SLICE_NAME = "spotlight";
-
 const spotlightSlice = createSlice({
-  name: SPOTLIGHT_SLICE_NAME,
+  name: "spotlight",
   initialState: {
     query: "",
   },

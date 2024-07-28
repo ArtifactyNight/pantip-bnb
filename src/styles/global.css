@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+  .swiper-container {
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10% 80%,
+      transparent 100%
+    );
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
