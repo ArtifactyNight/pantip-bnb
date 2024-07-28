@@ -4,6 +4,7 @@ const localePrefix: LocalePrefix = 'as-needed';
 
 // FIXME: Update this configuration file based on your project information
 export const AppConfig = {
+  logo: '/logo.png',
   name: 'Nextjs Starter',
   locales: ['en', 'fr'],
   defaultLocale: 'en',
