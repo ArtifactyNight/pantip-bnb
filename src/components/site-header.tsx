@@ -6,6 +6,7 @@ import type React from "react";
 import { ContainerWrapper } from "./container-wrapper";
 import { SpotlightBar } from "./spotlight-bar";
 import { Button } from "./ui/button";
+import { MobileNav } from "./mobile-nav";
 
 export const SiteHeader: React.FC = () => {
   return (
@@ -30,6 +31,7 @@ export const SiteHeader: React.FC = () => {
           </Button>
         </div>
       </ContainerWrapper>
+      <MobileNav />
     </header>
   );
 };
